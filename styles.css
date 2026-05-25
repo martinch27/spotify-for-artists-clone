@@ -35,28 +35,12 @@ body {
 }
 
 /* ============ INNER WIDTH CONSTRAINT ============ */
-.status-bar,
-.screen > *,
-.bottom-nav-inner {
+.screen > * {
   width: 100%;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* ============ STATUS BAR ============ */
-.status-bar {
-  flex-shrink: 0;
-  height: 44px;
-  padding: 0 28px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text);
-}
-.status-right { display: flex; gap: 6px; align-items: center; }
 
 /* ============ SCREENS ============ */
 .screen {
