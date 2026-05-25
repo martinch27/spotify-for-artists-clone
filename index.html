@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Spotify for Artists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="device">
+    <div class="status-bar">
+      <span class="time">9:41</span>
+      <div class="status-right">
+        <svg width="18" height="11" viewBox="0 0 18 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.5"/><rect x="5" y="5" width="3" height="6" rx="0.5"/><rect x="10" y="2" width="3" height="9" rx="0.5"/><rect x="15" y="0" width="3" height="11" rx="0.5"/></svg>
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="currentColor"><path d="M8 2.5c2 0 3.9.7 5.4 2L15 3c-1.9-1.7-4.4-2.7-7-2.7S2.9 1.3 1 3l1.6 1.5C4.1 3.2 6 2.5 8 2.5zM8 5.5c1.2 0 2.3.4 3.2 1.2l1.6-1.5C11.5 4 9.8 3.3 8 3.3s-3.5.7-4.8 1.9l1.6 1.5C5.7 5.9 6.8 5.5 8 5.5zM8 8.5c.6 0 1.1.2 1.5.6L8 10.7 6.5 9.1c.4-.4.9-.6 1.5-.6z"/></svg>
+        <svg width="25" height="11" viewBox="0 0 25 11" fill="none" stroke="currentColor" stroke-width="1"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5"/><rect x="2" y="2" width="18" height="7" rx="1.2" fill="currentColor"/><rect x="22.5" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" stroke="none"/></svg>
+      </div>
+    </div>
+
+    <!-- =================== MUSIC SCREEN =================== -->
+    <section class="screen screen-music active" data-screen="music">
+      <header class="app-header">
+        <h1>Music</h1>
+        <div class="avatar"></div>
+      </header>
+
+      <div class="tabs primary-tabs">
+        <button class="tab-btn active" data-tab="songs">Songs</button>
+        <button class="tab-btn" data-tab="playlists">Playlists</button>
+      </div>
+
+      <div class="filter">
+        <span>Streams • Last 28 days</span>
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1.5L6 6.5L11 1.5"/></svg>
+      </div>
+
+      <div class="col-header">
+        <span>LAST 28 DAYS</span>
+        <span>STREAMS</span>
+      </div>
+
+      <ul class="track-list">
+        <li class="track-row" data-go="track">
+          <div class="thumb thumb-1"></div>
+          <span class="track-name">Moster</span>
+          <span class="track-count">1.2M</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-2"></div>
+          <span class="track-name">Not Used</span>
+          <span class="track-count">603.6K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-3"></div>
+          <span class="track-name">Lights On</span>
+          <span class="track-count">243.4K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-4"></div>
+          <span class="track-name">Moster - Acoustic</span>
+          <span class="track-count">209.7K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-5"></div>
+          <span class="track-name">Tomorrow Morning</span>
+          <span class="track-count">209.2K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-6"></div>
+          <span class="track-name">Cross You Off My List</span>
+          <span class="track-count">205.8K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+        <li class="track-row">
+          <div class="thumb thumb-7"></div>
+          <span class="track-name">Baby Butt</span>
+          <span class="track-count">144.6K</span>
+          <svg class="chev" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l6 6-6 6"/></svg>
+        </li>
+      </ul>
+    </section>
+
+    <!-- =================== TRACK SCREEN =================== -->
+    <section class="screen screen-track" data-screen="track">
+      <header class="app-header track-header">
+        <button class="back-btn" data-back>
+          <svg width="11" height="18" viewBox="0 0 11 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 1L2 9l8 8"/></svg>
+        </button>
+      </header>
+
+      <div class="track-hero">
+        <div class="cover-art">
+          <div class="cover-title">LOLA KIRKE</div>
+          <div class="cover-sub">AND FRIENDS</div>
+          <div class="cover-illu">
+            <div class="cover-blob"></div>
+            <div class="cover-blob blob-2"></div>
+            <div class="cover-blob blob-3"></div>
+          </div>
+          <div class="cover-stripe">LOLA SINGS</div>
+        </div>
+        <h2 class="track-title">Mama (feat. Kelly Zutrau)</h2>
+        <div class="track-meta-line">
+          <div class="big-stat">42,237 streams</div>
+          <div class="meta-pills">
+            <span class="pill-text">ALL-TIME</span>
+            <span class="dot">•</span>
+            <span class="pill-text live">LIVE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h3 class="section-title">Streams</h3>
+        <div class="chart-wrap">
+          <div class="y-axis">
+            <span>300K</span>
+            <span>150K</span>
+          </div>
+          <svg class="chart purple-chart" viewBox="0 0 320 160" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="purpleFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#b495f1" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#b495f1" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,130 L20,128 L40,125 L60,120 L80,115 L100,118 L120,110 L140,100 L160,95 L180,88 L200,75 L220,70 L240,55 L260,48 L280,30 L300,38 L320,60 L320,160 L0,160 Z" fill="url(#purpleFill)"/>
+            <path d="M0,130 L20,128 L40,125 L60,120 L80,115 L100,118 L120,110 L140,100 L160,95 L180,88 L200,75 L220,70 L240,55 L260,48 L280,30 L300,38 L320,60" fill="none" stroke="#9b7ce0" stroke-width="2"/>
+            <circle cx="280" cy="30" r="4" fill="#9b7ce0"/>
+          </svg>
+          <div class="chart-pill purple-pill" style="left:74%;top:8%">SEP 24  11.4K</div>
+          <div class="x-axis">
+            <span>AUG 27</span>
+            <span>SEP 11</span>
+            <span>SEP 25</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h3 class="section-title">Totals for this song</h3>
+        <div class="tabs sub-tabs">
+          <button class="tab-btn active">STREAMS</button>
+          <button class="tab-btn">LISTENERS</button>
+          <button class="tab-btn">SAVES</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== AUDIENCE SCREEN =================== -->
+    <section class="screen screen-audience" data-screen="audience">
+      <header class="app-header">
+        <h1>Audience</h1>
+        <div class="avatar"></div>
+      </header>
+
+      <div class="big-stat">119,528 listeners</div>
+      <div class="stat-sub">LAST 28 DAYS</div>
+
+      <div class="tabs primary-tabs underlined">
+        <button class="tab-btn active">LISTENERS</button>
+        <button class="tab-btn">STREAMS</button>
+        <button class="tab-btn">FOLLOWERS</button>
+      </div>
+
+      <div class="chart-wrap">
+        <div class="y-axis">
+          <span>9K</span>
+          <span>4.5K</span>
+        </div>
+        <svg class="chart blue-chart" viewBox="0 0 320 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="blueFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7fb8e8" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#7fb8e8" stop-opacity="0.05"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,120 L20,115 L40,110 L60,105 L80,95 L100,85 L120,82 L140,72 L160,65 L180,58 L200,52 L220,42 L240,35 L260,30 L280,25 L300,28 L320,32 L320,160 L0,160 Z" fill="url(#blueFill)"/>
+          <path d="M0,120 L20,115 L40,110 L60,105 L80,95 L100,85 L120,82 L140,72 L160,65 L180,58 L200,52 L220,42 L240,35 L260,30 L280,25 L300,28 L320,32" fill="none" stroke="#5a9bd5" stroke-width="2"/>
+          <circle cx="280" cy="25" r="4" fill="#5a9bd5"/>
+        </svg>
+        <div class="chart-pill blue-pill" style="left:74%;top:5%">SEP 15  7.8K</div>
+        <div class="x-axis">
+          <span>SEP 1</span>
+          <span>SEP 8</span>
+          <span>SEP 15</span>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h3 class="section-title">Source of streams</h3>
+        <div class="stat-sub">LAST 28 DAYS</div>
+
+        <div class="source-row">
+          <div class="source-line">
+            <span class="source-name">Your profile and catalog</span>
+            <span class="source-pct">15%</span>
+          </div>
+          <div class="source-bar"><div class="source-fill" style="width:15%"></div></div>
+        </div>
+        <div class="source-row">
+          <div class="source-line">
+            <span class="source-name">Listener's own playlists and library</span>
+            <span class="source-pct">16%</span>
+          </div>
+          <div class="source-bar"><div class="source-fill" style="width:16%"></div></div>
+        </div>
+        <div class="source-row">
+          <div class="source-line">
+            <span class="source-name">Other listener's Playlists</span>
+            <span class="source-pct">5%</span>
+          </div>
+          <div class="source-bar"><div class="source-fill" style="width:5%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== BOTTOM NAV =================== -->
+    <nav class="bottom-nav">
+      <button class="nav-btn" data-go="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V11z"/></svg>
+      </button>
+      <button class="nav-btn active" data-go="music">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <button class="nav-btn" data-go="audience">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M14 20c0-2 1.5-4 4-4s4 1.5 4 4"/></svg>
+      </button>
+      <button class="nav-btn" data-go="profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+      </button>
+    </nav>
+
+    <div class="home-indicator"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
